@@ -37,7 +37,8 @@ describe("REST-job-catalog", function(){
 
     beforeEach(function() {
         waterline.catalogs = {
-          create: sandbox.stub().resolves()
+            findOrCreate: sandbox.stub().resolves({id: "fakeCatalogID"}),
+            updateByIdentifier: sandbox.stub().resolves()
         }
     });
 

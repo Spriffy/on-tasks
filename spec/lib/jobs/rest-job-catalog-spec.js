@@ -39,7 +39,7 @@ describe("REST-job-catalog", function(){
         waterline.catalogs = {
             findOrCreate: sandbox.stub().resolves({id: "fakeCatalogID"}),
             updateByIdentifier: sandbox.stub().resolves()
-        }
+        };
     });
 
 

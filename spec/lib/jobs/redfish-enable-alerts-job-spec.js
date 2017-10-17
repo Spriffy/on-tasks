@@ -96,7 +96,7 @@ describe("REST-redfish-job", function(){
         '"headers": {\n    "content-length": 225,\n    "content-type": "application/json"\n  },\n  ' +
         '"body": "{\\"Context\\":\\"context string\\",\\"Description\\":\\"Event Subscription Details\\",' +
         '\\"Destination\\":\\"https://11.111.11.111:8443/api/2.0/notification/alerts\\",\\"EventTypes\\":[\\"StatusChange\\",' +
-        '\\"Alert\\"],\\"Id\\":\\"id\\",\\"Name\\":\\"name\\",\\"Protocol\\":\\"Redfish\\"}"\n}'
+        '\\"Alert\\"],\\"Id\\":\\"id\\",\\"Name\\":\\"name\\",\\"Protocol\\":\\"Redfish\\"}"\n}';
 
         return expect(restJob.run()).to.be.rejectedWith(err);
     });
